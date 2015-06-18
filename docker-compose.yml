@@ -1,5 +1,5 @@
 nginx:
-    image: nginx
+    image: nginx:1.7.1
     volumes:
         - "nginx.conf:/etc/nginx.conf"
     ports:
