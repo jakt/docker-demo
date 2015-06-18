@@ -12,8 +12,6 @@ node1:
     volumes:
         - "app:/src/app"
         - "index-ver1.hjs:/src/app/views/index.hjs"
-    ports:
-        - "3030:3000"
     links:
         - "db:redis"
 node2:
@@ -21,8 +19,6 @@ node2:
     volumes:
         - "app:/src/app"
         - "index-ver2.hjs:/src/app/views/index.hjs"
-    ports:
-        - "3031:3000"
     links:
         - "db:redis"
 

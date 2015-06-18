@@ -13,3 +13,4 @@ Run `curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-co
 ## Run the stack
 1. Run `git clone https://github.com/jakt/docker-demo.git`
 2. Run `docker-compose up`
+3. Open http://docker:8080/
