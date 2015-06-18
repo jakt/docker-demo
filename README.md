@@ -1,3 +1,4 @@
+
 ## Install Docker
 1. Install Docker: https://github.com/boot2docker/osx-installer/releases/latest
 2. Run `boot2docker init && boot2docker start && eval "$(boot2docker shellinit)"`
@@ -15,3 +16,5 @@
 1. Run `git clone https://github.com/jakt/docker-demo.git && cd docker-demo`
 2. Run `docker-compose up`
 3. Open `http://docker:8080/`
+
+![Stack Layout](/server-layout.png?raw=true "Stack Layout")
