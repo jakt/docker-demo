@@ -8,9 +8,10 @@
 2. Run `docker run -it --rm ubuntu bash`
 
 ## Install Docker Compose
-Run `curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose` and `chmod +x /usr/local/bin/docker-compose`
+1. Run `curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose`
+2. Run `chmod +x /usr/local/bin/docker-compose`
 
 ## Run the stack
-1. Run `git clone https://github.com/jakt/docker-demo.git`
+1. Run `git clone https://github.com/jakt/docker-demo.git && cd docker-demo`
 2. Run `docker-compose up`
-3. Open http://docker:8080/
+3. Open `http://docker:8080/`
