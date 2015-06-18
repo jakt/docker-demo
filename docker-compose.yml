@@ -1,0 +1,30 @@
+nginx:
+    image: nginx
+    volumes:
+        - "nginx.conf:/etc/nginx.conf"
+    ports:
+        - "8080:80"
+    links:
+        - "node1:node1"
+        - "node2:node2"
+node1:
+    build: .
+    volumes:
+        - "app:/src/app"
+        - "index-ver1.hjs:/src/app/views/index.hjs"
+    ports:
+        - "3030:3000"
+    links:
+        - "db:redis"
+node2:
+    build: .
+    volumes:
+        - "app:/src/app"
+        - "index-ver2.hjs:/src/app/views/index.hjs"
+    ports:
+        - "3031:3000"
+    links:
+        - "db:redis"
+
+db:
+    image: redis
